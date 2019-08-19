@@ -23,7 +23,7 @@
             {
                 // Log that and return null
                 logger.LogError("Error");
-                return null; // TODO Implement
+                return null; 
             }
 
             double lattitude, longitude;

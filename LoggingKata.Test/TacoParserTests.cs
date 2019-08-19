@@ -8,13 +8,16 @@ namespace LoggingKata.Test
         [Fact]
         public void ShouldDoSomething()
         {
-            // TODO: Complete Something, if anything
+            
         }
 
         [Theory]
         [InlineData("34.073638, -84.677017, Taco Bell")]
         [InlineData("34.035985, -84.683302, Taco Bell")]
         [InlineData("34.087508, -84.575512, Taco Bell")]
+        [InlineData("90, 180, Taco Bell")]
+        [InlineData("-90, -180, Taco Bell")]
+        [InlineData("0, 0, Taco Bell")]      
         public void ShouldParse(string str)
         {
             //Arrange
@@ -26,7 +29,7 @@ namespace LoggingKata.Test
             //Assert
             Assert.NotNull(actual);
             
-            // TODO: Complete Should Parse
+            
         }
 
         [Theory]
@@ -37,7 +40,7 @@ namespace LoggingKata.Test
 
         public void ShouldFailParse(string str, ITrackable expected)
         {
-            // TODO: Complete Should Fail Parse
+            
 
             //Arrange
             TacoParser tacoParser = new TacoParser();
